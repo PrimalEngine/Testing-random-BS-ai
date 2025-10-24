@@ -78,85 +78,10 @@ A personalized wellness tracker app that helps users track habits, moods, and go
 - Celebrate small wins and streaks
 - Share progress with friends for accountability
 
-## 🚀 Deployment
 
-### Platform
-**Cloudflare Pages** with D1 Database
-
-### Status
-✅ **Active** - Running in development mode
-
-### Tech Stack
-- **Backend**: Hono (TypeScript) on Cloudflare Workers
-- **Frontend**: Vanilla JavaScript + TailwindCSS
-- **Database**: Cloudflare D1 (SQLite)
-- **Charts**: Chart.js for visualizations
-- **Icons**: Font Awesome 6.4.0
-- **HTTP Client**: Axios
-
-### Local Development
-```bash
-# Install dependencies
-npm install
-
-# Apply database migrations
-npm run db:migrate:local
-
-# Seed sample data
-npm run db:seed
-
-# Build the app
-npm run build
-
-# Start development server
-pm2 start ecosystem.config.cjs
-
-# Test the app
-npm test
-```
-
-### Database Commands
-```bash
-# Reset database (clear all data)
-npm run db:reset
-
-# Run SQL queries locally
-npm run db:console:local
-
-# Apply migrations to production
-npm run db:migrate:prod
-```
-
-### Production Deployment
-```bash
-# Build and deploy to Cloudflare Pages
-npm run deploy:prod
-
-# Note: First create D1 database in production:
-# npx wrangler d1 create mindtrack-production
-# Then update wrangler.jsonc with database_id
-```
-
-## 🎨 Features Implemented
 
 ### ✅ Core Features
-- [x] User authentication foundation
-- [x] CRUD operations for habits
-- [x] Daily check-in system
-- [x] Streak calculation algorithm
-- [x] Calendar heatmap visualization
-- [x] Trend analytics (30-day)
-- [x] Category-based organization
-- [x] Custom icons and colors
-- [x] Motivational messages
-- [x] Mood tracking
 
-### ✅ Bonus Features
-- [x] Friend connections (social foundation)
-- [x] Progress sharing system
-- [x] Energy level tracking
-- [x] Multi-category analytics
-- [x] Responsive design
 
 ### 🚧 Not Yet Implemented
 - [ ] Browser push notifications/reminders
@@ -165,38 +90,22 @@ npm run deploy:prod
 - [ ] Habit templates library
 - [ ] Gamification (badges, levels)
 - [ ] Weekly/monthly reports via email
+- [ ] User authentication foundation
+- [ ] CRUD operations for habits
+- [ ] Daily check-in system
+- [ ] Streak calculation algorithm
+- [ ] Calendar heatmap visualization
+- [ ] Trend analytics (30-day)
+- [ ] Category-based organization
+- [ ] Custom icons and colors
+- [ ] Motivational messages
+- [ ] Mood tracking
+- [ ] Friend connections (social foundation)
+- [ ] Progress sharing system
+- [ ] Energy level tracking
+- [ ] Multi-category analytics
+- [ ] Responsive design
 
-## 🔮 Recommended Next Steps
-
-1. **Enhanced Reminders**
-   - Implement browser notification API for daily reminders
-   - Allow users to set preferred check-in times
-   - Send streak reminder when close to breaking
-
-2. **AI Habit Suggestions**
-   - Integrate AI API to suggest habits based on user history
-   - Analyze completion patterns to recommend optimal times
-   - Suggest complementary habits (e.g., meditation + journaling)
-
-3. **Gamification**
-   - Add achievement badges (7-day, 30-day, 100-day streaks)
-   - Create leaderboards for friend groups
-   - Unlock new themes/icons as rewards
-
-4. **Advanced Analytics**
-   - Correlation analysis (mood vs. completion rate)
-   - Predict streak breaks and send encouragement
-   - Compare performance across weeks/months
-
-5. **Social Features**
-   - Group challenges (compete with friends)
-   - Habit templates sharing
-   - Accountability partners system
-
-6. **Export & Integration**
-   - Export data to CSV/PDF reports
-   - Calendar integrations (Google Calendar, Apple Calendar)
-   - Wearable device sync (Fitbit, Apple Watch)
 
 ## 📝 API Endpoints
 
